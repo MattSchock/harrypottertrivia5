@@ -12,7 +12,7 @@ const Questions = [{
 },
 {
     id: 1,
-    q: "Who found the room of requirement",
+    q: "Who found the room of requirement?",
     a: [{ text: "Ron", isCorrect: false, isSelected: false },
         { text: "Hermoine", isCorrect: false },
         { text: "Harry Potter", isCorrect: false },
@@ -22,15 +22,114 @@ const Questions = [{
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    q: "Who kills Sirius Black?",
+    a: [{ text: "Voldemort", isCorrect: false },
+        { text: "Dobby the house elf", isCorrect: false },
+        { text: "Bellatrix Lestrange", isCorrect: true },
+        { text: "Lucius Malfoy", isCorrect: false }
     ]
 
-}
+},
+{
+    id: 3,
+    q: "Which death eater presuades Harry Potter to turn in his prophecy?",
+    a: [{ text: "Voldemort", isCorrect: false },
+        { text: "Dobby the house elf", isCorrect: false },
+        { text: "Bellatrix Lestrange", isCorrect: false },
+        { text: "Lucius Malfoy", isCorrect: true }
+    ]
 
+},
+{
+    id: 4,
+    q: "How old was the kid that Dudley beat up at the start of the movie?",
+    a: [{ text: "8", isCorrect: false },
+        { text: "11", isCorrect: false },
+        { text: "10", isCorrect: true },
+        { text: "9", isCorrect: false }
+    ]
+
+},
+{
+    id: 5,
+    q: "What place is used as Headquarters for the order of the phoenix",
+    a: [{ text: "The room of requirement", isCorrect: false },
+        { text: "Sirius Blacks house", isCorrect: true },
+        { text: "The Hogs Head", isCorrect: false },
+        { text: "Lucius Malfoy's butthole", isCorrect: false }
+    ]
+
+},
+{
+    id: 6,
+    q: "Who escorts Harry potter to his ministry hearing?",
+    a: [{ text: "Voldemort", isCorrect: false },
+        { text: "Professor Dumbledore", isCorrect: false },
+        { text: "Ron Weasley", isCorrect: false },
+        { text: "Arthur Weasley", isCorrect: true }
+    ]
+
+},
+{
+    id: 7,
+    q: "Death Eaters have the dark mark on which arm?",
+    a: [{ text: "Left", isCorrect: true },
+        { text: "Right", isCorrect: false },
+        { text: "tramp stamp", isCorrect: false },
+        { text: "none", isCorrect: false }
+    ]
+
+},
+{
+    id: 8,
+    q: "What is dumbledores full name",
+    a: [{ text: "Albus Percival Wulfric Brian Dumbledore", isCorrect: true },
+        { text: "Albus Wulfric Percival Brian Dumbledore", isCorrect: false },
+        { text: "Albus Brian Wulfric Percival Dumbledore", isCorrect: false },
+        { text: "Albus The Dong Dumbledore", isCorrect: false }
+    ]
+
+},
+{
+    id: 8,
+    q: "Besides Harry, Who else can see Thestrals?",
+    a: [{ text: "Cho Chang", isCorrect: false },
+        { text: "Neville Longbottom", isCorrect: false },
+        { text: "Albus the Dong Dumbledore", isCorrect: false },
+        { text: "Luna Lovegood", isCorrect: true }
+    ]
+
+},
+{
+    id: 9,
+    q: "Where did Harry and Cho Kiss for the first time?",
+    a: [{ text: "The room of requirement", isCorrect: true },
+        { text: "The three broomsticks", isCorrect: false },
+        { text: "on their lips, you perv", isCorrect: false },
+        { text: "In the hallway of Hogwarts", isCorrect: false }
+    ]
+
+},
+{
+    id: 10,
+    q: "When was the movie released?",
+    a: [{ text: "2006", isCorrect: false },
+        { text: "2008", isCorrect: false },
+        { text: "2005", isCorrect: false },
+        { text: "2007", isCorrect: true }
+    ]
+
+},
+{
+    id: 11,
+    q: "What is the name of the witness that Dumbledore calls at Harrys hearing",
+    a: [{ text: "Voldemort", isCorrect: false },
+        { text: "Mrs. Arabella Figg", isCorrect: true },
+        { text: "Mr Cornabus Fleck", isCorrect: false },
+        { text: "Mrs Augusta Longbottom", isCorrect: false }
+    ]
+
+},
 ]
 
 // Set start
@@ -132,7 +231,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
 start = false;
-if (id < 2) {
+if (id < 8) {
     id++;
     iterate(id);
     console.log(id);
